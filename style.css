@@ -1,0 +1,263 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#2c3e50;
+    padding:15px 50px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.nav-links a:hover{
+    color:gold;
+}
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("images/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+/* Section Heading */
+
+.featured h2,
+.products-page h1,
+.about h1,
+.contact h1{
+    text-align:center;
+    margin:40px 0;
+}
+
+/* Products */
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    font-size:18px;
+    color:green;
+}
+
+.card button{
+    margin-top:15px;
+    padding:10px 18px;
+    border:none;
+    background:#3498db;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#21618c;
+}
+
+/* Search */
+
+#search{
+    width:80%;
+    display:block;
+    margin:20px auto;
+    padding:12px;
+    font-size:18px;
+}
+
+/* Filter Buttons */
+
+.filter-buttons{
+    text-align:center;
+    margin:20px;
+}
+
+.filter-buttons button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    background:#2c3e50;
+    color:white;
+    cursor:pointer;
+}
+
+.filter-buttons button:hover{
+    background:#34495e;
+}
+
+/* About */
+
+.about{
+    width:80%;
+    margin:auto;
+    line-height:1.8;
+    padding-bottom:40px;
+}
+
+/* Contact */
+
+.contact{
+    width:70%;
+    margin:auto;
+    padding-bottom:40px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+    margin:10px 0;
+    font-size:16px;
+}
+
+.contact button{
+    padding:12px;
+    background:#27ae60;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:#1e8449;
+}
+
+/* Footer */
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.product-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.navbar{
+flex-direction:column;
+}
+
+}
+
+@media(max-width:768px){
+
+.product-container{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.nav-links{
+flex-direction:column;
+text-align:center;
+margin-top:15px;
+}
+
+.contact{
+width:90%;
+}
+
+}

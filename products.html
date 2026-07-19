@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - ShopMart</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<h2 class="logo">ShopMart</h2>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li>🛒 Cart <span id="cart-count">0</span></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="products-page">
+
+<h1>Our Products</h1>
+
+<input type="text" id="search" placeholder="Search Products">
+
+<div class="filter-buttons">
+
+<button onclick="filterProducts('all')">All</button>
+<button onclick="filterProducts('Shoes')">Shoes</button>
+<button onclick="filterProducts('Electronics')">Electronics</button>
+<button onclick="filterProducts('Clothing')">Clothing</button>
+
+</div>
+
+<div class="product-container">
+
+<div class="card Shoes">
+<img src="images/shoes.jpg" alt="Shoes">
+<h3>Sports Shoes</h3>
+<p>₹999</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+<div class="card Electronics">
+<img src="images/phone.jpg" alt="Phone">
+<h3>Smart Phone</h3>
+<p>₹14,999</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+<div class="card Electronics">
+<img src="images/laptop.jpg" alt="Laptop">
+<h3>Laptop</h3>
+<p>₹45,999</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+<div class="card Clothing">
+<img src="images/tshirt.jpg" alt="T-Shirt">
+<h3>T-Shirt</h3>
+<p>₹699</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+<div class="card Electronics">
+<img src="images/watch.jpg" alt="Watch">
+<h3>Smart Watch</h3>
+<p>₹2,999</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+<div class="card Shoes">
+<img src="images/bag.jpg" alt="Bag">
+<h3>Travel Bag</h3>
+<p>₹1,299</p>
+<button onclick="addCart()">Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 ShopMart | All Rights Reserved</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
